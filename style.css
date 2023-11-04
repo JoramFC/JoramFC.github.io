@@ -1,3 +1,8 @@
+:root {
+  --dark-blue: #10297b;
+  --red: #ea223c;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,17 +15,23 @@ a {
 
 header {
   width: 100%;
-  background-color: rgb(0, 31, 61);
+  background-color: var(--dark-blue);
 }
 
 footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  bottom: 0;
   width: 100%;
   height: 60px;
-  background-color: rgb(0, 31, 61);
+  background-color: var(--dark-blue);
   color: rgb(229, 133, 75, 255);
+}
+
+section:nth-child(even) {
+  background-color: var(--red);
+}
+
+section {
+  height: 200px;
 }
