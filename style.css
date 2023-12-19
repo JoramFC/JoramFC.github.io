@@ -215,7 +215,6 @@ section {
 .carousel-reviews-container {
   position: relative;
   width: calc((100% + 0.5rem) * 2);
-  left: -100%;
   transition: left 1s;
 }
 
