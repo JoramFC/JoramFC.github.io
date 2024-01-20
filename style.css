@@ -27,7 +27,7 @@ a {
   margin: 0;
   padding: 0;
   font-family: "Outfit", Verdana, sans-serif;
-  font-size: small;
+  font-size: medium;
 }
 
 /* Styles */
@@ -95,7 +95,7 @@ button {
 }
 
 .side-description {
-  width: 40%;
+  width: 50%;
 }
 
 header {
@@ -154,14 +154,13 @@ section {
 }
 
 .card {
-  padding: 1rem;
+  padding: 2rem;
   background-color: var(--beige);
   border: solid 1px var(--marron);
 }
 
 .card > p {
   text-align: center;
-  margin-bottom: 1rem;
 }
 
 .description-container {
@@ -177,7 +176,7 @@ section {
 .besoin-stats-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .stat-container {
@@ -192,6 +191,8 @@ section {
 
 .card > .circular-brown-logo {
   margin: 0 auto 2rem auto;
+  width: 10rem;
+  height: 10rem;
 }
 
 .circular-brown-logo {
@@ -205,12 +206,11 @@ section {
 }
 
 .circular-brown-logo > img {
-  width: 70%;
+  width: 75%;
 }
 
 .carousel-reviews {
   position: relative;
-  width: 75%;
   overflow: hidden;
 }
 
@@ -218,6 +218,7 @@ section {
   position: relative;
   width: calc((100% + 0.5rem) * 2);
   transition: left 1s;
+  left: 0;
 }
 
 .carousel-slide {
