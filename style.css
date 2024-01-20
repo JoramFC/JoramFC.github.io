@@ -262,3 +262,12 @@ footer {
   align-items: center;
   justify-content: space-between;
 }
+
+.footer-container-icons a {
+  display: inline;
+  margin-left: 0.5rem;
+}
+
+.footer-container-icons a img {
+  width: 1rem;
+}
