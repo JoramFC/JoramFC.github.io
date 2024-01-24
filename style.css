@@ -32,29 +32,35 @@ a {
 
 /* Styles */
 
-.main-logo {
-  max-height: 10rem;
-}
-
 h1,
 h2 {
-  font-size: 300%;
+  font-size: 200%;
   font-weight: 200;
   font-family: "Cookie", cursive;
+}
+
+hr {
+  --line-weight: 0.1rem;
+  width: 3rem;
+  border: solid var(--line-weight) var(--marron);
+  border-radius: var(--line-weight);
+}
+
+.section-heading {
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.section-heading h2 {
+  text-align: center;
 }
 
 li {
   list-style-type: none;
   margin-bottom: 1rem;
-}
-
-hr {
-  margin-top: 0.5rem;
-  margin-bottom: 1rem;
-  --line-weight: 0.1rem;
-  width: 3rem;
-  border: solid var(--line-weight) var(--marron);
-  border-radius: var(--line-weight);
 }
 
 button {
@@ -87,29 +93,183 @@ button {
 }
 
 .shadowed {
-  box-shadow: 0px 9px 33px 8px rgba(70, 70, 70, 0.3);
+  box-shadow: 0px 5px 10px 0px rgba(168, 134, 92, 0.3);
 }
 
 .bordered {
   border-radius: 1rem;
 }
 
-.side-description {
-  width: 50%;
+.circular-brown-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--circular-brown-logo-size);
+  height: var(--circular-brown-logo-size);
+  border-radius: 50%;
+  background-color: var(--marron);
 }
 
+section {
+  padding-block: 2rem;
+}
+
+.circular-brown-logo > img {
+  width: 75%;
+}
+
+.wrapper {
+  padding: 0 1rem;
+  max-width: 1024px;
+  margin-inline: auto;
+}
+
+/* Header */
+
 header {
-  padding-top: 2rem;
-  padding-bottom: 4rem;
-  min-height: 200px;
+  background-color: var(--beige);
+  padding-block: 2rem 0rem;
+}
+
+.main-logo {
+  max-height: 10rem;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto 2rem auto;
+}
+
+.main-description h1 {
+  text-align: center;
+}
+
+.main-description h1 br {
+  display: none;
+}
+
+.enroll-button {
+  display: block;
+  margin: 0 auto 0 auto;
 }
 
 .main-image {
-  position: absolute;
-  top: 0;
-  right: 0;
-  max-height: 40rem;
+  display: none;
 }
+
+@media screen and (width >= 576px) {
+  header {
+    --background-coverage: 10%;
+    background: linear-gradient(
+      0deg,
+      var(--white) 0%,
+      var(--white) var(--background-coverage),
+      var(--beige) var(--background-coverage),
+      var(--beige) 100%
+    );
+  }
+  header .wrapper {
+    display: flex;
+  }
+  .main-image {
+    display: block;
+    max-height: 100%;
+    max-width: 50%;
+  }
+}
+
+/* Main */
+
+/* Section Quoi ? */
+
+.even-columns {
+  display: grid;
+  gap: 1rem;
+}
+
+@media screen and (width >= 576px) {
+  .even-columns {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (width >= 992px) {
+  .even-columns {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+}
+
+.card-outline {
+  display: flex;
+  padding: 1rem;
+  background-color: var(--beige);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+  background-color: var(--beige);
+  border: solid 1px var(--marron);
+}
+
+.card > p {
+  text-align: center;
+}
+
+/* Section Qui ? */
+
+.who-img {
+  width: clamp(1rem, 100%, 30rem);
+}
+
+/* Section Avis */
+
+.carousel-slide {
+  padding: 1rem;
+  background-color: var(--beige);
+}
+
+.carousel-slide img {
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+}
+
+/* Footer */
+
+footer {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+.footer-container-icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-container-icons a img {
+  width: 1rem;
+}
+
+@media screen and (width >= 576px) {
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/*
 
 section {
   padding-top: 4rem;
@@ -128,23 +288,17 @@ section {
   position: relative;
 }
 
-/* @media (width > 768px) {
-  section {
-    padding: 0;
-  }
-} */
-
-@media screen and (width > 768px) {
-  .even-columns {
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    gap: 1rem;
-  }
-}
-
 .even-columns > * {
   flex-basis: 100%;
+}
+
+hr {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  --line-weight: 0.1rem;
+  width: 3rem;
+  border: solid var(--line-weight) var(--marron);
+  border-radius: var(--line-weight);
 }
 
 .card-outline {
@@ -271,3 +425,4 @@ footer {
 .footer-container-icons a img {
   width: 1rem;
 }
+*/

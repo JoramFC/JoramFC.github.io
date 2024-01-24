@@ -1,20 +1,18 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="it">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
     />
-
+    <link rel="stylesheet" href="style.css" />
     <title>A votre service !</title>
   </head>
   <body>
-    <header class="beige-background main-section">
-      <div class="main-container">
-        <div class="side-description">
+    <header>
+      <div class="wrapper">
+        <div class="main-description">
           <img src="./resources/logo.svg" alt="logo" class="main-logo" />
           <h1>
             Cours de français
@@ -31,7 +29,7 @@
             <li>Tristique in est nec, vehicula finibus nibh</li>
             <li>Sem vitae mattis sollicitudin</li>
           </ul>
-          <button>Enroll Now</button>
+          <button class="enroll-button">Enroll Now</button>
         </div>
         <img
           src="./resources/serveuse.png"
@@ -40,12 +38,15 @@
         />
       </div>
     </header>
+
     <main>
       <!-- C'EST QUOI ? -->
-      <section id="quoi" class="main-section">
-        <div class="main-container">
-          <h2 class="text-center">À votre service c’est quoi?</h2>
-          <hr class="centered" />
+      <section id="quoi">
+        <div class="wrapper">
+          <div class="section-heading">
+            <h2>À votre service c’est quoi?</h2>
+            <hr />
+          </div>
           <div class="even-columns">
             <div class="card-outline shadowed bordered">
               <div class="card bordered">
@@ -56,7 +57,7 @@
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
                   facilis iusto voluptatem veritatis illum atque accusamus.
                   Beatae alias, quo nobis nemo magni repellat nam, dignissimos
-                  labore, est suscipit mollitia recusandae!
+                  labore, est suscipit mollitia recusandae! lo
                 </p>
               </div>
             </div>
@@ -92,46 +93,44 @@
                   <img src="./resources/4_italy_icon_142597.png" alt="logo" />
                 </div>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
-                  magnam asperiores quibusdam nesciunt, labore sequi quis iste
-                  id beatae debitis aspernatur vero nemo, ullam nostrum. Debitis
-                  ullam nesciunt aspernatur. Quibusdam!
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+                  facilis iusto voluptatem veritatis illum atque accusamus.
+                  Beatae alias, quo nobis nemo magni repellat nam, dignissimos
+                  labore, est suscipit mollitia recusandae!
                 </p>
               </div>
             </div>
           </div>
         </div>
       </section>
+
       <!-- BESOIN -->
-      <section id="besoin" class="dark-background main-section">
-        <div class="main-container">
+      <section id="besoin" class="beige-background">
+        <div class="wrapper">
           <div class="description-container">
-            <div>
+            <div class="section-heading">
               <h2>
                 À votre service c’est la seule formation dont tu as besoin
               </h2>
               <hr />
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-                iaculis est eget tincidunt egestas. Aenean mattis, sem vitae
-                mattis sollicitudin, lectus sem accumsan massa, in hendrerit
-                arcu metus eu neque. Mauris leo nunc, Sed fringilla sodales
-                nulla, vitae luctus nisl porta in.
-                <br />
-                <br />
-                Vivamus non quam nec ante luctus consectetur.
-                <br />
-                <br />
-              </p>
-              <ul>
-                <li>Lorem ipsum dolor sit amet, consectetur elit</li>
-                <li>Tristique in est nec, vehicula finibus nibh</li>
-                <li>Sem vitae mattis sollicitudin</li>
-              </ul>
             </div>
-            <div class="besoin-description-container_logo">
-              <img src="./resources/logo_cloche.svg" alt="logo" width="170px" />
-            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              iaculis est eget tincidunt egestas. Aenean mattis, sem vitae
+              mattis sollicitudin, lectus sem accumsan massa, in hendrerit arcu
+              metus eu neque. Mauris leo nunc, Sed fringilla sodales nulla,
+              vitae luctus nisl porta in.
+              <br />
+              <br />
+              Vivamus non quam nec ante luctus consectetur.
+              <br />
+              <br />
+            </p>
+            <ul>
+              <li>Lorem ipsum dolor sit amet, consectetur elit</li>
+              <li>Tristique in est nec, vehicula finibus nibh</li>
+              <li>Sem vitae mattis sollicitudin</li>
+            </ul>
           </div>
           <div class="besoin-stats-container">
             <div class="stat-container">
@@ -155,43 +154,43 @@
           </div>
         </div>
       </section>
+
       <!-- C'EST QUI ? -->
-      <section id="prof" class="main-section">
-        <div class="main-container">
-          <div class="description-container">
-            <img
-              src="./resources/chef.png"
-              alt=""
-              class="shadowed bordered"
-              loading="lazy"
-            />
-            <div>
-              <h2>À votre service c’est qui?</h2>
-              <hr />
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-                iaculis est eget tincidunt egestas. Aenean mattis, sem vitae
-                mattis sollicitudin, lectus sem accumsan massa, in hendrerit
-                arcu metus eu neque. Mauris leo nunc, tristique in est nec,
-                vehicula finibus nibh. Sed fringilla sodales nulla, vitae luctus
-                nisl porta in.
-                <br />
-                <br />
-                Vivamus non quam nec ante luctus consectetur. Suspendisse quis
-                arcu quis nisi porta rutrum. In malesuada urna non fringilla
-                pretium. Ut mattis, nulla et rutrum pulvinar, metus neque
-                vehicula tortor, eget gravida leo nisl nec mi. Sed ullamcorper
-                ac nunc vel facilisis.
-              </p>
-            </div>
+      <section id="prof">
+        <div class="wrapper">
+          <div class="section-heading">
+            <h2>À votre service c’est qui?</h2>
+            <hr />
           </div>
+          <img
+            src="./resources/joanna.png"
+            alt="joanna carlini la professeur"
+            class="shadowed bordered who-img"
+            loading="lazy"
+          />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+            iaculis est eget tincidunt egestas. Aenean mattis, sem vitae mattis
+            sollicitudin, lectus sem accumsan massa, in hendrerit arcu metus eu
+            neque. Mauris leo nunc, tristique in est nec, vehicula finibus nibh.
+            Sed fringilla sodales nulla, vitae luctus nisl porta in.
+          </p>
+          <p>
+            Vivamus non quam nec ante luctus consectetur. Suspendisse quis arcu
+            quis nisi porta rutrum. In malesuada urna non fringilla pretium. Ut
+            mattis, nulla et rutrum pulvinar, metus neque vehicula tortor, eget
+            gravida leo nisl nec mi. Sed ullamcorper ac nunc vel facilisis.
+          </p>
         </div>
       </section>
+
       <!-- AVIS -->
-      <section id="avis " class="main-section">
-        <div class="main-container">
-          <h2 class="text-center centered">Ils ont testé à votre service</h2>
-          <hr class="centered" />
+      <section id="avis">
+        <div class="wrapper">
+          <div class="section-heading">
+            <h2>Ils ont testé à votre service</h2>
+            <hr />
+          </div>
           <div class="carousel-reviews centered">
             <div class="carousel-reviews-container even-columns">
               <div class="carousel-slide bordered">
@@ -252,11 +251,11 @@
         </div>
       </section>
     </main>
-    <footer class="dark-background main-section">
-      <div class="main-container">
+
+    <footer class="dark-background">
+      <div class="wrapper">
         <div class="footer-container">
           <p>© 2023 copyright à votre service. All rights reserved.</p>
-
           <div class="footer-container-icons">
             <a
               href="https://www.facebook.com/profile.php?id=61554707536403"
