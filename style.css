@@ -280,7 +280,6 @@ footer {
 
 .useful-links a {
   display: inline;
-  text-decoration: underline;
   color: var(--marron);
 }
 
