@@ -29,7 +29,8 @@
             <li>Tristique in est nec, vehicula finibus nibh</li>
             <li>Sem vitae mattis sollicitudin</li>
           </ul>
-          <button class="enroll-button">Enroll Now</button>
+          <!-- <button class="enroll-button">Enroll Now</button> -->
+          <a href="#" class="enroll-button">Enroll Now</a>
         </div>
         <img
           src="./resources/serveuse.webp"
@@ -162,25 +163,33 @@
             <h2>À votre service c’est qui?</h2>
             <hr />
           </div>
-          <img
-            src="./resources/joanna.webp"
-            alt="joanna carlini la professeur"
-            class="shadowed bordered who-img"
-            loading="lazy"
-          />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-            iaculis est eget tincidunt egestas. Aenean mattis, sem vitae mattis
-            sollicitudin, lectus sem accumsan massa, in hendrerit arcu metus eu
-            neque. Mauris leo nunc, tristique in est nec, vehicula finibus nibh.
-            Sed fringilla sodales nulla, vitae luctus nisl porta in.
-          </p>
-          <p>
-            Vivamus non quam nec ante luctus consectetur. Suspendisse quis arcu
-            quis nisi porta rutrum. In malesuada urna non fringilla pretium. Ut
-            mattis, nulla et rutrum pulvinar, metus neque vehicula tortor, eget
-            gravida leo nisl nec mi. Sed ullamcorper ac nunc vel facilisis.
-          </p>
+          <div class="who-content">
+            <div>
+              <img
+                src="./resources/joanna.webp"
+                alt="joanna carlini la professeur"
+                class="shadowed bordered who-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="who-description">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+                iaculis est eget tincidunt egestas. Aenean mattis, sem vitae
+                mattis sollicitudin, lectus sem accumsan massa, in hendrerit
+                arcu metus eu neque. Mauris leo nunc, tristique in est nec,
+                vehicula finibus nibh. Sed fringilla sodales nulla, vitae luctus
+                nisl porta in.
+              </p>
+              <p>
+                Vivamus non quam nec ante luctus consectetur. Suspendisse quis
+                arcu quis nisi porta rutrum. In malesuada urna non fringilla
+                pretium. Ut mattis, nulla et rutrum pulvinar, metus neque
+                vehicula tortor, eget gravida leo nisl nec mi. Sed ullamcorper
+                ac nunc vel facilisis.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -255,8 +264,13 @@
     <footer class="dark-background">
       <div class="wrapper">
         <div class="footer-container">
-          <p>© 2023 copyright à votre service. All rights reserved.</p>
-          <div class="footer-container-icons">
+          <div class="useful-links">
+            <a href="#">Mentions Légales</a> |
+            <a href="#">Politique de confidentialités</a> |
+            <a href="#">Conditions générales de vente</a>
+          </div>
+          <p>2024 - @ AVotreService - Tutti diritti riservati.</p>
+          <!-- <div class="footer-container-icons">
             <a
               href="https://www.facebook.com/profile.php?id=61554707536403"
               target="_blank"
@@ -265,7 +279,7 @@
             <a href="https://www.instagram.com/avs_francese/" target="_blank"
               ><img src="./resources/instagram.svg"
             /></a>
-          </div>
+          </div> -->
         </div>
       </div>
     </footer>

@@ -16,9 +16,6 @@
 a {
   text-decoration: none;
   color: inherit;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 *,
@@ -27,7 +24,7 @@ a {
   margin: 0;
   padding: 0;
   font-family: "Outfit", Verdana, sans-serif;
-  font-size: medium;
+  font-size: large;
 }
 
 /* Styles */
@@ -37,6 +34,15 @@ h2 {
   font-size: 200%;
   font-weight: 200;
   font-family: "Cookie", cursive;
+}
+
+@media screen and (width >= 576px) {
+  h1,
+  h2 {
+    font-size: 250%;
+    font-weight: 200;
+    font-family: "Cookie", cursive;
+  }
 }
 
 hr {
@@ -63,18 +69,24 @@ li {
   margin-bottom: 1rem;
 }
 
-button {
+.enroll-button {
+  --transition-delay: 0.2s;
   padding: 1rem 4rem 1rem 4rem;
   border: none;
   border-radius: 2rem;
-  font-weight: 400;
-  background-color: var(--blue);
+  font-weight: 600;
+  font-size: larger;
+  background-color: var(--marron);
   color: var(--white);
   cursor: pointer;
+  text-align: center;
+  transition: color var(--transition-delay) ease,
+    background-color var(--transition-delay) ease;
 }
 
-.text-center {
-  text-align: center;
+.enroll-button:hover {
+  background-color: var(--white);
+  color: var(--marron);
 }
 
 .centered {
@@ -120,7 +132,7 @@ section {
 
 .wrapper {
   padding: 0 1rem;
-  max-width: 1024px;
+  max-width: 1140px;
   margin-inline: auto;
 }
 
@@ -129,6 +141,7 @@ section {
 header {
   background-color: var(--beige);
   padding-block: 2rem 0rem;
+  min-height: calc(80vh - 2rem);
 }
 
 .main-logo {
@@ -144,11 +157,6 @@ header {
 
 .main-description h1 br {
   display: none;
-}
-
-.enroll-button {
-  display: block;
-  margin: 0 auto 0 auto;
 }
 
 .main-image {
@@ -220,8 +228,30 @@ header {
 
 /* Section Qui ? */
 
+.who-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 .who-img {
-  width: clamp(1rem, 100%, 30rem);
+  width: 100%;
+}
+
+@media screen and (width >= 576px) {
+  .who-content {
+    flex-direction: row;
+  }
+
+  .who-content > * {
+    flex: 1;
+  }
+}
+
+.who-description {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 /* Section Avis */
@@ -245,12 +275,16 @@ footer {
 }
 
 .footer-container {
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
-  gap: 1rem;
   text-align: center;
 }
+
+.useful-links a {
+  display: inline;
+  text-decoration: underline;
+  color: var(--marron);
+}
+
+/*
 
 .footer-container-icons {
   display: flex;
@@ -267,7 +301,7 @@ footer {
     flex-direction: row;
     justify-content: space-between;
   }
-}
+} */
 
 /*
 
