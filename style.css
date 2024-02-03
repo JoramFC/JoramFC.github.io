@@ -71,10 +71,10 @@ li {
 
 .enroll-button {
   --transition-delay: 0.2s;
-  padding: 1rem 4rem 1rem 4rem;
-  border: none;
+  padding: 1rem 2rem;
+  border: solid 4px var(--marron);
   border-radius: 2rem;
-  font-weight: 600;
+  font-weight: bold;
   font-size: larger;
   background-color: var(--marron);
   color: var(--white);
@@ -122,6 +122,10 @@ li {
   background-color: var(--marron);
 }
 
+.no-padding {
+  padding: 0;
+}
+
 section {
   padding-block: 2rem;
 }
@@ -144,23 +148,27 @@ header {
   min-height: calc(80vh - 2rem);
 }
 
-.main-logo {
+.header-container-logo {
   max-height: 10rem;
   max-width: 100%;
   display: block;
   margin: 0 auto 2rem auto;
 }
 
-.main-description h1 {
+.header-container-main h1 {
   text-align: center;
 }
 
-.main-description h1 br {
+.header-container-main h1 br {
   display: none;
 }
 
-.main-image {
+.header-container-image {
   display: none;
+}
+
+.header-container-image img {
+  width: 100%;
 }
 
 @media screen and (width >= 576px) {
@@ -174,13 +182,15 @@ header {
       var(--beige) 100%
     );
   }
-  header .wrapper {
+  .header-container {
     display: flex;
+    gap: 1rem;
   }
-  .main-image {
+  .header-container > * {
+    flex: 1;
+  }
+  .header-container-image {
     display: block;
-    max-height: 100%;
-    max-width: 50%;
   }
 }
 
@@ -224,6 +234,36 @@ header {
 
 .card > p {
   text-align: center;
+}
+
+/* Section Besoin */
+
+.besoin-container {
+  display: flex;
+}
+
+.besoin-container > * {
+  flex: 1;
+}
+
+.description-container {
+  padding-block: 2rem;
+}
+
+.besoin-image {
+  display: none;
+}
+
+@media screen and (width >= 992px) {
+  .description-container {
+    padding-inline: 1rem;
+  }
+  .besoin-image {
+    display: block;
+    background-image: url("resources/serveuse.webp");
+    background-position: top left;
+    background-size: cover;
+  }
 }
 
 /* Section Qui ? */
